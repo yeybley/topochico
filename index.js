@@ -1,15 +1,18 @@
+//Crear constantes para solicitar uso de los paquetes express, mysql y body-parser
 const express = require('express');
-const mysql = require('mysql2');
+const mysql = require('mysql');
 const bodyParser = require('body-parser');
 
+//crear una constante que almacene en app las funciones de express
 const app = express();
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'server',
+  password: '',
   database: 'topochico'
 });
 
