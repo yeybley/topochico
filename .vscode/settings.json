@@ -1,0 +1,25 @@
+{
+    "launch": {
+
+        "configurations": [],
+        "compounds": [],
+        
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+        {
+            "scope": ["keyword.operator.arrow"],
+            "settings": {
+            "foreground": "#c586c0",
+            "fontStyle": "italic"
+            }
+        }
+        ]
+    },
+    "editor.fontLigatures": true,
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "monospace",
+    "scm.inputFontFamily": "editor"
+
+}
