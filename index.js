@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 
+
+
 //crear una constante que almacene en app las funciones de express
 const app = express();
 
@@ -14,7 +16,7 @@ app.set('view engine', 'ejs');
 //app.use(express.static(path.join(__dirname, './registro/views')))
 app.set('views', path.join(__dirname, 'registro', 'views'));
 
-
+app.use(express.static('public'));
 
 // se crea la variable connection para establecer la conexión con la BD
 const connection = mysql.createConnection({
@@ -40,6 +42,17 @@ app.get('/registro', function(req,res){
   res.render('registro');
 });
 
+/*app.get('/story', function(req,res){
+  res.render('story.html');
+})*/
+
+
+app.get('/registro', (req, res) => {
+
+  // Redirige a la nueva página
+  res.redirect('story.html');
+});
+
 
 //Se llama al método post para pasar a la BD los datos a capturar: nombre y correo
 app.post('/registro', (req, res) => {
@@ -50,7 +63,15 @@ app.post('/registro', (req, res) => {
       console.error('Error al cargar datos en la base de datos:', error);
     } else {
       console.log('Usuario guardado correctamente en la base de datos');
-      res.send('ALTA EXITOSA');
+      res.render('registro',{
+        alert: true,
+        alertTitle: "Registración",
+        alertMessage: "¡Registro exitoso!",
+        alertIcon: 'success',
+        showConfirmButton: false,
+        timer: 1500,
+        ruta:''
+      })
     }
   });
 });
@@ -59,3 +80,4 @@ app.post('/registro', (req, res) => {
 app.listen(3000, () => {
   console.log('Servidor iniciado en el puerto 3000');
 });
+

@@ -28,7 +28,7 @@ label {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="name"] {
     width: 90%;
     padding: 10px;
     margin-bottom: 20px;
