@@ -10,7 +10,9 @@ const path = require('path');
 //crear una constante que almacene en app las funciones de express
 const app = express();
 
-app.set('view engine', 'ejs');
+//app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 //app.set('views', path.join(__dirname, 'views'));
 //app.use(express.static(path.join(__dirname, './registro/views')))
@@ -42,39 +44,44 @@ app.get('/registro', function(req,res){
   res.render('registro');
 });
 
-/*app.get('/story', function(req,res){
-  res.render('story.html');
+app.get('/story', function(req,res){
+  res.render('story');
+})
+/*app.get('/story', (req,res)=>{
+  res.render('./story');
 })*/
 
-
-app.get('/registro', (req, res) => {
-
-  // Redirige a la nueva página
-  res.redirect('story.html');
-});
-
+/*app.get('/prueba', function(req,res){
+  res.render('prueba');
+});*/
 
 //Se llama al método post para pasar a la BD los datos a capturar: nombre y correo
 app.post('/registro', (req, res) => {
   const fullname = req.body.fullname;
   const email = req.body.email;
-  connection.query('INSERT INTO usuarios SET ?', {fullname: fullname, email: email}, (error, results) => {
+
+  connection.query('SELECT * FROM usuarios WHERE fullname = ? AND email = ?', [fullname, email], (error, results) => {
     if (error) {
-      console.error('Error al cargar datos en la base de datos:', error);
+      console.error('Error al verificar datos en la base de datos:', error);
     } else {
-      console.log('Usuario guardado correctamente en la base de datos');
-      res.render('registro',{
-        alert: true,
-        alertTitle: "Registración",
-        alertMessage: "¡Registro exitoso!",
-        alertIcon: 'success',
-        showConfirmButton: false,
-        timer: 1500,
-        ruta:''
-      })
+      if (results.length > 0) {
+        console.log('El usuario ya existe en la base de datos');
+        res.redirect('/story'); // Redirigir a la página story.html si el usuario ya existe
+      } else {
+        connection.query('INSERT INTO usuarios SET ?', {fullname: fullname, email: email}, (error, results) => {
+          if (error) {
+            console.error('Error al cargar datos en la base de datos:', error);
+          } else {
+            console.log('Usuario guardado correctamente en la base de datos');
+            res.redirect('/story'); // Redirigir a la página story.html si el usuario se ha guardado correctamente
+          }
+        });
+      }
     }
   });
 });
+
+
 
 //esta instrucción indica que el servidor está corriendo en el puerto 3000
 app.listen(3000, () => {
