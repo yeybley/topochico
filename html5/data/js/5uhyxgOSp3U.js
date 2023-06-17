@@ -216,7 +216,7 @@
   ],
   slideLayers: [
     {
-      audiolib: [{ kind: "audio", assetId: 216, id: "6SowalFwCRP" }],
+      audiolib: [{kind: "audio", assetId: 216, id: "6SowalFwCRP"}],
       enableSeek: true,
       enableReplay: true,
       timeline: {
