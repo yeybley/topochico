@@ -1,4 +1,4 @@
-﻿window.globalProvideData("slide", {
+window.globalProvideData("slide", {
   title: "Diapositiva sin título",
   trackViews: true,
   showMenuResultIcon: false,

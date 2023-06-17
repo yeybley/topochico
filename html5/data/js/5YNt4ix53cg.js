@@ -1,4 +1,4 @@
-﻿window.globalProvideData("slide", {
+window.globalProvideData("slide", {
   title: "Select the channels that BEST fit Topo Chico Sabores",
   trackViews: true,
   showMenuResultIcon: false,
@@ -8523,3 +8523,4 @@
     },
   ],
 });
+
