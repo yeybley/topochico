@@ -20,6 +20,7 @@
     "editor.inlayHints.fontFamily": "JetBrains Mono",
     "editor.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontFamily": "monospace",
-    "scm.inputFontFamily": "editor"
+    "scm.inputFontFamily": "editor",
+    "editor.maxTokenizationLineLength": 1000000
 
 }
