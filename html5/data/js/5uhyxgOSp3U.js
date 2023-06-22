@@ -1,4 +1,5 @@
-window.globalProvideData("slide", {
+window.globalProvideData("slide",
+{
   title: "Diapositiva sin título",
   trackViews: true,
   showMenuResultIcon: false,
@@ -216,7 +217,10 @@ window.globalProvideData("slide", {
   ],
   slideLayers: [
     {
-      audiolib: [{kind: "audio", assetId: 216, id: "6SowalFwCRP"}],
+      audiolib: [
+        {kind: "audio", assetId: 216, id: "6SowalFwCRP"
+        }
+      ],
       enableSeek: true,
       enableReplay: true,
       timeline: {
@@ -1305,7 +1309,6 @@ window.globalProvideData("slide", {
                         underlineThickness: 0.933,
                         xHeight: 9.221,
                       },
-
                       {
                         text: " , ",
                         style: {
@@ -1984,8 +1987,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/6kd1kqQZ63E.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2015,8 +2017,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2051,8 +2052,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/6kd1kqQZ63E.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2082,8 +2082,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2118,8 +2117,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/6kd1kqQZ63E.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2149,8 +2147,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2185,8 +2182,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/6kd1kqQZ63E.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2216,8 +2212,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2310,8 +2305,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/5w8Rh4B3Fkv.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2341,8 +2335,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2377,8 +2370,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/5iLob2RovhW.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2408,8 +2400,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2444,8 +2435,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/6BaItMbNHZ2.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 165,
                   height: 226,
                   mobiledx: 0,
@@ -2475,8 +2465,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
@@ -2511,8 +2500,7 @@ window.globalProvideData("slide", {
                   id: "01",
                   url: "story_content/5w8Rh4B3Fkv.png",
                   type: "normal",
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   width: 166,
                   height: 226,
                   mobiledx: 0,
@@ -2542,8 +2530,7 @@ window.globalProvideData("slide", {
                   top: 0,
                   right: 83,
                   bottom: 113,
-                  altText:
-                    "Text\\r\\n\\r\\nDescription automatically generated",
+                  altText: "Text\\r\\n\\r\\nDescription automatically generated",
                   altTextOverridesText: true,
                   pngfb: false,
                   pr: {
