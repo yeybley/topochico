@@ -1,4 +1,4 @@
-﻿window.globalProvideData('frame', 
+﻿window.globalProvideData('frame',
 {
     "default_layout": "pxabnsnfns01011100101",
     "textdirection": "ltr",
