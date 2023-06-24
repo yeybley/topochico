@@ -1,4 +1,5 @@
-﻿window.globalProvideData("slide", {
+﻿window.globalProvideData("slide",
+{
   title: "Index",
   trackViews: true,
   showMenuResultIcon: false,
@@ -1237,8 +1238,7 @@
               top: 0,
               right: 295,
               bottom: 60,
-              altText:
-                "Channel Strategy\\nExecution Recommendations\\nOrder of Entry\\nMerchandising Strategy",
+              altText: "Channel Strategy\\nExecution Recommendations\\nOrder of Entry\\nMerchandising Strategy",
               pngfb: false,
               pr: {
                 l: "Lib",
