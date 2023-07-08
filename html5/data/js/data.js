@@ -1,6 +1,5 @@
-﻿window.globalProvideData('data', 
-{
-    "version": "3.75.30269.0",
+﻿window.globalProvideData('data',
+{   "version": "3.75.30269.0",
     "bwVersion": "4.0",
     "tincanVersion": "1.0",
     "tincanLanguage": "und",
@@ -2724,7 +2723,8 @@
                                             "textshadow": false,
                                             "shadowIndex": -1,
                                             "scrollOverflow": false,
-                                            "vartext":"<html><p dir=\'ltr\' align=\'left\'><font face=\'Faustina\' size=\'18pt\'color=\'#FFFFFF\'>La función %_player.$LastErrorFeature% de esta diapositiva se desactivó mientras se miraba localmente porque el navegador no la admite.</font></p></html>"
+                                            "vartext": "<html><p dir='ltr' align='left'><font face='Faustina' size='18pt' color='#FFFFFF'>La función %_player.$LastErrorFeature% de esta diapositiva se desactivó mientras se miraba localmente porque el navegador no la admite.</font></p></html>"
+
                                         }
                                     ],
                                     "shapemaskId": "",
@@ -11257,4 +11257,4 @@
             ]
         }
     ]
-});
+})
