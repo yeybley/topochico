@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet"  href="/public/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form id="quizForm" onsubmit="evaluateQuiz(event)">
+        <h3>Select the correct product description:</h3>
+        <input type="radio" name="question1" value="option1">Topo Chico Sabores is filtered sparkling water, with real fruit juice and herbal extracts with minerals added for taste.<br>
+        <input type="radio" name="question1" value="option2">Topo Chico Sabores is sparkling mineral water, sourced from Monterrey Mexico, with a twist of flavor and real fruit extracts.<br>
+
+
+        <h3>Topo Chico Sabores belongs to the category of:</h3>
+        <input type="radio" name="question2" value="option1">Hispanic sparkling soft-drinks such as Jarritos.<br>
+        <input type="radio" name="question2" value="option2">Premium single-sourced flavored sparkling mineral waters such as S. Pellegrino.<br>
+        <input type="radio" name="question2" value="option3">Un-sourced flavored sparkling waters such as Spindrift.<br>
+
+        <h3>Which of the following statements is True:</h3>
+        <input type="radio" name="question3" value="option1">Topo Chico Sabores should be merchandised as a completely separate product, and shine on its own because the target, category, channel strategy and objectives are different.<br>
+        <input type="radio" name="question3" value="option2">Topo Chico is now a mother-brand and Sabores should leverage the Topo Chico brand credentials. The source may differ but the quality, authenticity and unique merchandising strategy remain the same.<br>
+
+        <h3>Select 2 key learning that led to create Topo Chico Sabores:</h3>
+        <input type="radio" name="question4" value="option1">Capitalize on functional and healthier ingredients, with exciting flavor pairings and less calories.<br>
+        <input type="radio" name="question4" value="option2">There is a shift towards a balanced lifestyle, with functional beverages in creative flavors.<br>
+        <input type="radio" name="question4" value="option3">Consumers are looking for sweet, sparkling drinks with flavors they already know and love.<br>
+        <input type="radio" name="question4" value="option4">The post-pandemic consumer is looking for more alcoholic beverage choices to unwind.<br>
+
+        <h3>Select the channels that BEST fit Topo Chico Sabores:</h3>
+        <input type="radio" name="question5" value="option1">Fine Dining, Hispanic Stores, Gourmet Stores, Drug stores.<br>
+        <input type="radio" name="question5" value="option2">Large Stores, Casual Food Outlets, Cafés, College Food Halls.<br>
+        <input type="radio" name="question5" value="option3">Small Stores, Fast Food Chains, Value Stores, Bars.<br>
+        <input type="radio" name="question5" value="option4">All of the above.<br>
+
+        <br>
+        <input type="submit" value="Send responses">
+    </form>
+    <script src="/html5/data/js/script.js"></script>
+</body>
+</html>
